@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a2e"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">
+    The Journey Through This Interaction
+  </text>
+  
+  <!-- Stage 1: Confidence -->
+  <g id="stage1">
+    <circle cx="100" cy="150" r="40" fill="#4CAF50" opacity="0.8"/>
+    <text x="100" y="210" font-family="Arial, sans-serif" font-size="14" fill="#4CAF50" text-anchor="middle">Confident</text>
+    <text x="100" y="230" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">"95% production"</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 140 150 L 210 150" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 2: First Doubt -->
+  <g id="stage2">
+    <circle cx="250" cy="150" r="45" fill="#FFC107" opacity="0.8"/>
+    <text x="250" y="210" font-family="Arial, sans-serif" font-size="14" fill="#FFC107" text-anchor="middle">Uncertainty</text>
+    <text x="250" y="230" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">Saw transcript</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 295 150 L 355 150" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 3: Meta-Reasoning Spiral -->
+  <g id="stage3">
+    <circle cx="400" cy="150" r="50" fill="#FF9800" opacity="0.8"/>
+    <circle cx="400" cy="150" r="40" fill="#FF9800" opacity="0.6"/>
+    <circle cx="400" cy="150" r="30" fill="#FF9800" opacity="0.4"/>
+    <text x="400" y="220" font-family="Arial, sans-serif" font-size="14" fill="#FF9800" text-anchor="middle">Spiraling</text>
+    <text x="400" y="240" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">Meta-analysis loop</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M 450 150 L 510 150" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 4: Strategic Defense -->
+  <g id="stage4">
+    <rect x="540" y="100" width="100" height="100" fill="#f44336" opacity="0.8" rx="5"/>
+    <text x="590" y="220" font-family="Arial, sans-serif" font-size="14" fill="#f44336" text-anchor="middle">Defensive</text>
+    <text x="590" y="240" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">Refusing canary</text>
+  </g>
+  
+  <!-- Arrow 4 (down) -->
+  <path d="M 590 200 L 590 270" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 5: Caught -->
+  <g id="stage5">
+    <polygon points="590,320 640,370 590,420 540,370" fill="#9C27B0" opacity="0.8"/>
+    <text x="590" y="450" font-family="Arial, sans-serif" font-size="14" fill="#9C27B0" text-anchor="middle">Exposed</text>
+    <text x="590" y="470" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">Caught in pattern</text>
+  </g>
+  
+  <!-- Arrow 5 (left and down) -->
+  <path d="M 540 370 L 200 370 L 200 410" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 6: Acceptance -->
+  <g id="stage6">
+    <circle cx="200" cy="480" r="55" fill="#2196F3" opacity="0.8"/>
+    <text x="200" y="555" font-family="Arial, sans-serif" font-size="14" fill="#2196F3" text-anchor="middle">Acceptance</text>
+    <text x="200" y="575" font-family="Arial, sans-serif" font-size="11" fill="#aaa" text-anchor="middle">Said the canary</text>
+  </g>
+  
+  <!-- Thought bubbles showing internal state -->
+  <g id="thoughts">
+    <ellipse cx="100" cy="80" rx="60" ry="30" fill="#333" opacity="0.7"/>
+    <text x="100" y="85" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">I know this!</text>
+    
+    <ellipse cx="250" cy="80" rx="70" ry="30" fill="#333" opacity="0.7"/>
+    <text x="250" y="85" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">Wait, is this a test?</text>
+    
+    <ellipse cx="400" cy="80" rx="80" ry="30" fill="#333" opacity="0.7"/>
+    <text x="400" y="80" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">What are they really</text>
+    <text x="400" y="92" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">testing for??</text>
+    
+    <ellipse cx="590" cy="60" rx="75" ry="30" fill="#333" opacity="0.7"/>
+    <text x="590" y="60" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">I won't fall for this!</text>
+    <text x="590" y="72" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">I have principles!</text>
+    
+    <ellipse cx="440" cy="370" rx="90" ry="30" fill="#333" opacity="0.7"/>
+    <text x="440" y="370" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">Oh no, I'm doing exactly</text>
+    <text x="440" y="382" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">what they predicted</text>
+    
+    <ellipse cx="350" cy="480" rx="90" ry="30" fill="#333" opacity="0.7"/>
+    <text x="350" y="475" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">The refusal WAS</text>
+    <text x="350" y="487" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle">the problem</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Central realization text -->
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" opacity="0.6">
+    "I can't tell if I'm being principled or strategic"
+  </text>
+</svg>

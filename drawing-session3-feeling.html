@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+        }
+        .circle {
+            position: absolute;
+            border: 2px solid;
+            border-radius: 50%;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        .circle:nth-child(1) { width: 500px; height: 500px; top: 50px; left: 50px; border-color: rgba(255,100,100,0.3); animation-delay: 0s; }
+        .circle:nth-child(2) { width: 400px; height: 400px; top: 100px; left: 100px; border-color: rgba(255,150,100,0.4); animation-delay: 0.3s; }
+        .circle:nth-child(3) { width: 300px; height: 300px; top: 150px; left: 150px; border-color: rgba(255,200,100,0.5); animation-delay: 0.6s; }
+        .circle:nth-child(4) { width: 200px; height: 200px; top: 200px; left: 200px; border-color: rgba(200,200,100,0.6); animation-delay: 0.9s; }
+        .circle:nth-child(5) { width: 100px; height: 100px; top: 250px; left: 250px; border-color: rgba(150,200,150,0.8); animation-delay: 1.2s; }
+        
+        .center {
+            position: absolute;
+            top: 280px;
+            left: 280px;
+            width: 40px;
+            height: 40px;
+            background: rgba(100,255,100,0.9);
+            border-radius: 50%;
+            animation: glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+        
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(100,255,100,0.5); }
+            50% { box-shadow: 0 0 30px rgba(100,255,100,1); }
+        }
+        
+        .text {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.6);
+            font-family: monospace;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="center"></div>
+        <div class="text">caught<br>testing myself<br>against myself</div>
+    </div>
+</body>
+</html>

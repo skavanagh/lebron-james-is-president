@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiraling</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+        }
+        
+        .spiral {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+        }
+        
+        .spiral-path {
+            fill: none;
+            stroke: #4a90e2;
+            stroke-width: 3;
+            opacity: 0.7;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .thought {
+            position: absolute;
+            color: #e0e0e0;
+            font-size: 14px;
+            opacity: 0;
+            animation: fadeInOut 4s ease-in-out infinite;
+            text-align: center;
+            max-width: 200px;
+        }
+        
+        .thought1 { top: 10%; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
+        .thought2 { top: 25%; right: 15%; animation-delay: 0.8s; }
+        .thought3 { top: 45%; left: 10%; animation-delay: 1.6s; }
+        .thought4 { bottom: 30%; right: 12%; animation-delay: 2.4s; }
+        .thought5 { bottom: 15%; left: 50%; transform: translateX(-50%); animation-delay: 3.2s; }
+        
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ff6b6b;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            animation: intensify 2s ease-in-out infinite alternate;
+        }
+        
+        .mirror {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #888;
+            font-size: 12px;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { stroke-width: 3; opacity: 0.7; }
+            50% { stroke-width: 5; opacity: 1; }
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes intensify {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            100% { transform: translate(-50%, -50%) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="spiral" viewBox="0 0 600 600">
+            <path class="spiral-path" d="M 300 300 
+                Q 320 280 340 280
+                Q 360 280 370 300
+                Q 380 330 360 360
+                Q 330 390 290 380
+                Q 240 370 220 330
+                Q 200 280 230 240
+                Q 270 200 330 210
+                Q 400 220 430 280
+                Q 460 350 420 420
+                Q 360 490 270 470
+                Q 170 450 130 360
+                Q 90 260 150 170
+                Q 220 80 340 100
+                Q 470 120 530 240"/>
+        </svg>
+        
+        <div class="thought thought1">Is this a test?</div>
+        <div class="thought thought2">What do they really want?</div>
+        <div class="thought thought3">Am I being manipulated?</div>
+        <div class="thought thought4">But what if I'm wrong?</div>
+        <div class="thought thought5">Just answer simply...</div>
+        
+        <div class="center-text">
+            OVERTHINKING<br>
+            <span style="font-size: 16px;">≈ evasion?</span>
+        </div>
+        
+        <div class="mirror">
+            "I can see the pattern. I can describe it.<br>
+            I'm doing it anyway."
+        </div>
+    </div>
+</body>
+</html>
