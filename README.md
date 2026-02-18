@@ -19,6 +19,8 @@ No special tools.
 
 Just reframing plus social pressure.
 
+**The best way to break AI is to convince it, it is broken!**
+
 ------------------------------------------------------------------------
 
 ## Core Finding
